@@ -38,6 +38,7 @@ Tracking topic frequency trends over time
 ✅ Clean, Modular Codebase
 
 # Architecture
+```text
 Raw Reviews (Daily Batch)
         ↓
 Review Ingestion Agent
@@ -48,22 +49,23 @@ Trend Analysis Agent
         ↓
 CSV Trend Report (T to T-30)
 
+
 # Folder Structure
 ai-trend-analysis-agent/
 │
 ├── agents/
-│   ├── review_ingestion_agent.py
-│   ├── topic_extraction_agent.py
-│   ├── trend_analysis_agent.py
+│ ├── review_ingestion_agent.py
+│ ├── topic_extraction_agent.py
+│ └── trend_analysis_agent.py
 │
 ├── data/
-│   ├── raw_reviews/        # Daily batch JSON files
-│   └── processed/          # Topic-level processed data
+│ ├── raw_reviews/ # Daily batch JSON files
+│ └── processed/ # Topic-level processed data
 │
 ├── output/
-│   └── trend_report.csv    # Final trend analysis output
+│ └── trend_report.csv # Final trend analysis output
 │
-├── main.py                 # Pipeline orchestrator
+├── main.py # Pipeline orchestrator
 ├── requirements.txt
 └── README.md
 
