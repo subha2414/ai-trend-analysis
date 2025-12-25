@@ -123,6 +123,8 @@ output/trend_report.csv
 - VS Code (recommended)
 
 **Install Dependencies**
+
+
 pip install -r requirements.txt
 
 **How to Run**
