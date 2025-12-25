@@ -1,4 +1,4 @@
-# 📊 AI Trend Analysis Agent (App Reviews)
+# 📊 AI Trend Analysis (App Reviews)
 **Overview**
 
 This project implements an Agentic AI pipeline that analyzes Google Play Store app reviews and generates a trend analysis report of user issues, requests, and feedback over time.
