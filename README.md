@@ -51,31 +51,25 @@ CSV Trend Report (T to T-30)
 ```
 
 # Folder Structure
-App Reviews (Daily Batch)
+```text
+ai-trend-analysis/
 │
-├── Review Ingestion Agent
-│   └── Fetches raw app reviews
-│   └── Stores daily batch JSON files
-│       └── data/raw_reviews/
-│           └── YYYY-MM-DD.json
+├── agents/
+│   ├── review_ingestion_agent.py
+│   ├── topic_extraction_agent.py
+│   └── trend_analysis_agent.py
 │
-├── Topic Extraction Agent
-│   └── Reads raw review batches
-│   └── Extracts normalized issue/request topics
-│   └── Outputs topic-level records
-│       └── data/processed/
-│           └── YYYY-MM-DD.json
+├── data/
+│   ├── raw_reviews/        # Daily batch JSON files
+│   └── processed/          # Topic-level processed data
 │
-├── Trend Analysis Agent
-│   └── Aggregates processed topic data
-│   └── Computes frequency per topic per day
-│   └── Generates trend table (T to T-30)
-│       └── output/
-│           └── trend_report.csv
+├── output/
+│   └── trend_report.csv    # Final trend analysis output
 │
-└── Pipeline Orchestrator
-    └── main.py
-    └── Controls execution order of agents
+├── main.py                 # Pipeline orchestrator
+├── requirements.txt
+└── README.md
+```
 
 
 # How It Works
