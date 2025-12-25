@@ -1,0 +1,32 @@
+[
+  {
+    "batch_date": "2024-07-03",
+    "review_date": "2024-07-03",
+    "text": "Delivery partner was rude and unprofessional",
+    "rating": 3
+  },
+  {
+    "batch_date": "2024-07-03",
+    "review_date": "2024-07-03",
+    "text": "Food was cold and stale",
+    "rating": 3
+  },
+  {
+    "batch_date": "2024-07-03",
+    "review_date": "2024-07-03",
+    "text": "Delivery was very late",
+    "rating": 3
+  },
+  {
+    "batch_date": "2024-07-03",
+    "review_date": "2024-07-03",
+    "text": "Great service and fast delivery",
+    "rating": 3
+  },
+  {
+    "batch_date": "2024-07-03",
+    "review_date": "2024-07-03",
+    "text": "App crashes sometimes while ordering",
+    "rating": 3
+  }
+]
