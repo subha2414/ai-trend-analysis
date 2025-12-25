@@ -1,0 +1,8 @@
+google-play-scraper
+pandas
+numpy
+sentence-transformers
+faiss-cpu
+tqdm
+openai
+python-dotenv

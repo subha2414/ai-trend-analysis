@@ -1,0 +1,14 @@
+[
+  {
+    "batch_date": "2025-12-25",
+    "review_date": "2025-01-01",
+    "text": "Delivery partner was rude",
+    "rating": 1
+  },
+  {
+    "batch_date": "2025-12-25",
+    "review_date": "2025-01-01",
+    "text": "Food was cold and stale",
+    "rating": 2
+  }
+]
