@@ -37,7 +37,7 @@ Tracking topic frequency trends over time
 
 ✅ Clean, Modular Codebase
 
-Architecture
+# Architecture
 Raw Reviews (Daily Batch)
         ↓
 Review Ingestion Agent
@@ -48,7 +48,7 @@ Trend Analysis Agent
         ↓
 CSV Trend Report (T to T-30)
 
-Folder Structure
+# Folder Structure
 ai-trend-analysis-agent/
 │
 ├── agents/
@@ -67,8 +67,8 @@ ai-trend-analysis-agent/
 ├── requirements.txt
 └── README.md
 
-How It Works
-1️⃣ Review Ingestion Agent
+# How It Works
+## 1️⃣ Review Ingestion Agent
 
 Simulates daily ingestion of app reviews
 
@@ -76,7 +76,7 @@ Stores each batch as a separate JSON file
 
 Mimics real-world streaming or batch pipelines
 
-2️⃣ Topic Extraction Agent
+## 2️⃣ Topic Extraction Agent
 
 Analyzes raw review text
 
@@ -84,7 +84,7 @@ Extracts the main issue/request per review
 
 Normalizes feedback into consistent topic categories
 
-3️⃣ Trend Analysis Agent
+## 3️⃣ Trend Analysis Agent
 
 Aggregates processed topics
 
