@@ -1,11 +1,11 @@
-📊 AI Trend Analysis Agent (App Reviews)
+# 📊 AI Trend Analysis Agent (App Reviews)
 Overview
 
 This project implements an Agentic AI pipeline that analyzes app store reviews and generates a 30-day trend analysis report of user issues, requests, and feedback.
 
 The system simulates a daily batch ingestion pipeline, extracts high-level topics from reviews, consolidates similar feedback, and produces a trend table that can be directly consumed by product and business teams.
 
-Problem Statement
+# Problem Statement
 
 Product teams often struggle to identify:
 
@@ -23,7 +23,7 @@ Extracting normalized topics from noisy text
 
 Tracking topic frequency trends over time
 
-Key Features
+# Key Features
 
 ✅ Daily Batch Processing (simulated production setup)
 
