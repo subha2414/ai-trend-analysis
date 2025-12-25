@@ -38,7 +38,6 @@ Tracking topic frequency trends over time
 ✅ Clean, Modular Codebase
 
 # Architecture
-```text
 Raw Reviews (Daily Batch)
         ↓
 Review Ingestion Agent
