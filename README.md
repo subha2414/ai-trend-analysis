@@ -38,15 +38,9 @@ The system simulates a daily batch ingestion pipeline, extracts high-level topic
 ✅ Clean, Modular Codebase
 
 # Architecture
-Raw Reviews (Daily Batch)
-        ↓
-Review Ingestion Agent
-        ↓
-Topic Extraction Agent
-        ↓
-Trend Analysis Agent
-        ↓
-CSV Trend Report (T to T-30)
+```text
+Raw Reviews → Review Ingestion Agent → Topic Extraction Agent → Trend Analysis Agent → CSV Trend Report (T to T-30)
+
 
 
 # Folder Structure
