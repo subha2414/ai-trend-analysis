@@ -1,5 +1,5 @@
 # 📊 AI Trend Analysis Agent (App Reviews)
-Overview
+**Overview**
 
 This project implements an Agentic AI pipeline that analyzes app store reviews and generates a 30-day trend analysis report of user issues, requests, and feedback.
 
@@ -108,18 +108,19 @@ App Reviews (Daily Batch)
 
 # Output Format
 
-The final output is a CSV file:
+**The final output is a CSV file:**
 
 output/trend_report.csv
 
 
-Example:
+**Example:**
 
-Topic	2025-01-25
-delivery partner rude	6
-delivery delay	12
-food quality issue	9
-other feedback	173
+| Topic | 2025-01-25 |
+|-------|------------|
+| Delivery delay | 12 |
+| Delivery partner rude | 6 |
+| Food quality issue | 9 |
+
 # Installation & Setup
 **Prerequisites**
 
@@ -152,11 +153,11 @@ Trend report generated successfully
 
 - The pipeline is designed to be easily extendable with:
 
-- - LLM-based topic extraction
+  - LLM-based topic extraction
 
-- - Semantic topic deduplication
+  - Semantic topic deduplication
 
-- - Multi-day rolling windows
+  - Multi-day rolling windows
 
 
 # Future Improvements
