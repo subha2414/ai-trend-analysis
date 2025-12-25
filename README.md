@@ -1,4 +1,4 @@
-# 📊 Senior AI Engineer – AI Trend Analysis
+# 📊 Senior AI Engineer Assignment – AI Trend Analysis
 **Overview**
 
 This project implements an Agentic AI pipeline that analyzes Google Play Store app reviews and generates a trend analysis report of user issues, requests, and feedback over time.
