@@ -78,7 +78,7 @@ App Reviews (Daily Batch)
 
 
 # How It Works
-## 1️⃣ Review Ingestion Agent
+**1️⃣ Review Ingestion Agent**
 
 - Simulates daily ingestion of app reviews
 
@@ -86,7 +86,7 @@ App Reviews (Daily Batch)
 
 - Mimics real-world streaming or batch pipelines
 
-## 2️⃣ Topic Extraction Agent
+**2️⃣ Topic Extraction Agent**
 
 - Analyzes raw review text
 
@@ -94,17 +94,17 @@ App Reviews (Daily Batch)
 
 - Normalizes feedback into consistent topic categories
 
-## 3️⃣ Trend Analysis Agent
+**3️⃣ Trend Analysis Agent**
 
 - Aggregates processed topics
 
 - Generates a pivot table:
 
-- - Rows → Topics
+  - Rows → Topics
 
-- - Columns → Dates
+  - Columns → Dates
 
-- - Cells → Frequency of occurrence
+  - Cells → Frequency of occurrence
 
 # Output Format
 
@@ -121,7 +121,7 @@ delivery delay	12
 food quality issue	9
 other feedback	173
 # Installation & Setup
-# Prerequisites
+**Prerequisites**
 
 - Python 3.10+
 
@@ -129,16 +129,16 @@ other feedback	173
 
 - VS Code (recommended)
 
-# Install Dependencies
+**Install Dependencies**
 pip install -r requirements.txt
 
-# How to Run
+**How to Run**
 
-From the project root:
+***From the project root:***
 
 python main.py
 
-On successful execution, you will see:
+***On successful execution, you will see:***
 
 Trend report generated successfully
 
