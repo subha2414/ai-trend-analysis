@@ -7,21 +7,21 @@ The system simulates a daily batch ingestion pipeline, extracts high-level topic
 
 # Problem Statement
 
-Product teams often struggle to identify:
+- Product teams often struggle to identify:
 
-What issues are increasing over time
+- What issues are increasing over time
 
-Which user complaints are recurring
+- Which user complaints are recurring
 
-What new feedback trends are emerging
+- What new feedback trends are emerging
 
-This AI agent addresses the problem by:
+- This AI agent addresses the problem by:
 
-Processing daily app review batches
+- Processing daily app review batches
 
-Extracting normalized topics from noisy text
+- Extracting normalized topics from noisy text
 
-Tracking topic frequency trends over time
+- Tracking topic frequency trends over time
 
 # Key Features
 
@@ -80,33 +80,33 @@ App Reviews (Daily Batch)
 # How It Works
 ## 1️⃣ Review Ingestion Agent
 
-Simulates daily ingestion of app reviews
+- Simulates daily ingestion of app reviews
 
-Stores each batch as a separate JSON file
+- Stores each batch as a separate JSON file
 
-Mimics real-world streaming or batch pipelines
+- Mimics real-world streaming or batch pipelines
 
 ## 2️⃣ Topic Extraction Agent
 
-Analyzes raw review text
+- Analyzes raw review text
 
-Extracts the main issue/request per review
+- Extracts the main issue/request per review
 
-Normalizes feedback into consistent topic categories
+- Normalizes feedback into consistent topic categories
 
 ## 3️⃣ Trend Analysis Agent
 
-Aggregates processed topics
+- Aggregates processed topics
 
-Generates a pivot table:
+- Generates a pivot table:
 
-Rows → Topics
+- - Rows → Topics
 
-Columns → Dates
+- - Columns → Dates
 
-Cells → Frequency of occurrence
+- - Cells → Frequency of occurrence
 
-Output Format
+# Output Format
 
 The final output is a CSV file:
 
@@ -120,58 +120,46 @@ delivery partner rude	6
 delivery delay	12
 food quality issue	9
 other feedback	173
-Installation & Setup
-Prerequisites
+# Installation & Setup
+# Prerequisites
 
-Python 3.10+
+- Python 3.10+
 
-Git
+- Git
 
-VS Code (recommended)
+- VS Code (recommended)
 
-Install Dependencies
+# Install Dependencies
 pip install -r requirements.txt
 
-How to Run
+# How to Run
 
 From the project root:
 
 python main.py
 
-
 On successful execution, you will see:
 
 Trend report generated successfully
 
-Assumptions & Design Decisions
+# Assumptions & Design Decisions
 
-Google Play does not guarantee reliable historical daily reviews
+- Google Play does not guarantee reliable historical daily reviews
 
-To ensure stability, daily review ingestion is simulated
+- To ensure stability, daily review ingestion is simulated
 
-This accurately reflects real-world batch processing systems
+- This accurately reflects real-world batch processing systems
 
-The pipeline is designed to be easily extendable with:
+- The pipeline is designed to be easily extendable with:
 
-LLM-based topic extraction
+- - LLM-based topic extraction
 
-Semantic topic deduplication
+- - Semantic topic deduplication
 
-Multi-day rolling windows
+- - Multi-day rolling windows
 
-Limitations
 
-Current topic extraction uses rule-based logic for stability
-
-Can be enhanced using:
-
-LLMs (GPT / Mistral / LLaMA)
-
-Embedding-based semantic clustering
-
-Historical app review availability is platform-dependent
-
-Future Improvements
+# Future Improvements
 
 🔹 LLM-powered topic extraction
 
@@ -183,28 +171,28 @@ Future Improvements
 
 🔹 Multi-app support
 
-Why This Approach Works
+# Why This Approach Works
 
-Agent-oriented design improves modularity
+- Agent-oriented design improves modularity
 
-High-recall topic extraction avoids trend fragmentation
+- High-recall topic extraction avoids trend fragmentation
 
-Output format is directly usable by product teams
+- Output format is directly usable by product teams
 
-Pipeline mirrors real production data systems
+- Pipeline mirrors real production data systems
 
 
-Submission Notes
+# Submission Notes
 
-Repository is private
+- Repository is private
 
-Includes working code and sample output
+- Includes working code and sample output
 
-Pipeline is fully reproducible
+- Pipeline is fully reproducible
 
-Ready for live demonstration
+- Ready for live demonstration
 
-🚀 Status
+# 🚀 Status
 
 ✅ End-to-End Pipeline Completed
 ✅ Live Assignment Ready
