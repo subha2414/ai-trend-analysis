@@ -1,27 +1,27 @@
 # 📊 AI Trend Analysis Agent (App Reviews)
 **Overview**
 
-This project implements an Agentic AI pipeline that analyzes app store reviews and generates a 30-day trend analysis report of user issues, requests, and feedback.
+This project implements an Agentic AI pipeline that analyzes Google Play Store app reviews and generates a trend analysis report of user issues, requests, and feedback over time.
 
-The system simulates a daily batch ingestion pipeline, extracts high-level topics from reviews, consolidates similar feedback, and produces a trend table that can be directly consumed by product and business teams.
+The system is designed to simulate daily batch ingestion starting from June 1, 2024, process reviews using modular AI agents, and produce a structured trend table (T to T-30) that can be directly used by product and business teams.
 
 # Problem Statement
 
-- Product teams often struggle to identify:
+- Product teams need a scalable way to understand:
 
-- What issues are increasing over time
+  - Which user issues are increasing over time
 
-- Which user complaints are recurring
+  - What feedback patterns are recurring
 
-- What new feedback trends are emerging
+  - What new issues or requests are emerging
 
-- This AI agent addresses the problem by:
+- This assignment requires building an AI agent that:
 
-- Processing daily app review batches
+  - Consumes daily app review batches
 
-- Extracting normalized topics from noisy text
+  - Extracts meaningful topics
 
-- Tracking topic frequency trends over time
+  - Tracks topic frequency trends across days
 
 # Key Features
 
@@ -75,31 +75,28 @@ ai-trend-analysis/
 # How It Works
 **1️⃣ Review Ingestion Agent**
 
-- Simulates daily ingestion of app reviews
+- Simulates daily ingestion of Google Play Store reviews
+
+- Creates one batch per day starting from June 1, 2024
 
 - Stores each batch as a separate JSON file
-
-- Mimics real-world streaming or batch pipelines
+(YYYY-MM-DD.json)
 
 **2️⃣ Topic Extraction Agent**
 
-- Analyzes raw review text
+- Reads raw daily review batches
 
-- Extracts the main issue/request per review
+- Extracts and normalizes the main issue / request / feedback topic
 
-- Normalizes feedback into consistent topic categories
+- Produces structured topic-level data per day
 
 **3️⃣ Trend Analysis Agent**
 
-- Aggregates processed topics
+- Aggregates topic data across all days
 
-- Generates a pivot table:
+- Computes topic frequency per day
 
-  - Rows → Topics
-
-  - Columns → Dates
-
-  - Cells → Frequency of occurrence
+- Generates a CSV trend table for analysis
 
 # Output Format
 
@@ -110,11 +107,11 @@ output/trend_report.csv
 
 **Example:**
 
-| Topic | 2025-01-25 |
-|-------|------------|
-| Delivery delay | 12 |
-| Delivery partner rude | 6 |
-| Food quality issue | 9 |
+| Topic                  | 2024-06-01 | 2024-06-02 | ... | 2025-01-25 |
+|------------------------|------------|------------|-----|------------|
+| Delivery delay         | 12         | 8          | ... | 23         |
+| Delivery partner rude  | 5          | 7          | ... | 9          |
+| Food quality issue     | 9          | 6          | ... | 11         |
 
 # Installation & Setup
 **Prerequisites**
@@ -136,36 +133,35 @@ python main.py
 
 ***On successful execution, you will see:***
 
-Trend report generated successfully
+- Daily batch files are generated from June 1, 2024 → current date
+
+- Topics are extracted and processed
+
+- Final trend report is created in output/
 
 # Assumptions & Design Decisions
 
-- Google Play does not guarantee reliable historical daily reviews
+***Note:**
+Google Play Store does not guarantee reliable access to historical daily reviews.
+To handle this limitation, the system simulates daily review batches starting from
+June 1, 2024, while preserving the exact batch-based architecture required
+for trend analysis.
 
-- To ensure stability, daily review ingestion is simulated
-
-- This accurately reflects real-world batch processing systems
-
-- The pipeline is designed to be easily extendable with:
-
-  - LLM-based topic extraction
-
-  - Semantic topic deduplication
-
-  - Multi-day rolling windows
+This approach mirrors real-world production pipelines where ingestion and analysis
+are decoupled from data availability constraints.
 
 
 # Future Improvements
 
-🔹 LLM-powered topic extraction
+- LLM-based high-recall topic extraction
 
-🔹 Semantic topic deduplication using embeddings
+- Semantic topic deduplication using embeddings
 
-🔹 Rolling 30-day automated trend generation
+- Rolling 30-day automated trend window
 
-🔹 API / Dashboard integration
+- REST API or dashboard for product teams
 
-🔹 Multi-app support
+- Multi-app support (Swiggy, Zomato, etc.)
 
 # Why This Approach Works
 
@@ -180,13 +176,13 @@ Trend report generated successfully
 
 # Submission Notes
 
-- Repository is private
+- Repository contains complete runnable code
 
-- Includes working code and sample output
+- Architecture aligns with assignment requirements
 
-- Pipeline is fully reproducible
+- Daily batch assumption clearly documented
 
-- Ready for live demonstration
+- Ready for live demonstration and evaluation
 
 # 🚀 Status
 
